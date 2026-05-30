@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🚗 CarRental</div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+</nav>
+
+<div class="form-container">
+
+    <div class="form-box">
+        <h1>Create Account</h1>
+
+        <form method="POST">
+
+            <input type="text"
+            name="username"
+            placeholder="Enter Username"
+            required>
+
+            <input type="email"
+            name="email"
+            placeholder="Enter Email"
+            required>
+
+            <input type="password"
+            name="password"
+            placeholder="Enter Password"
+            required>
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

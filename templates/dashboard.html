@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🚗 CarRental</div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/add_car">Add Car</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard-container">
+
+    <div class="dashboard-header">
+        <h1>Available Cars</h1>
+
+        <a href="/add_car">
+            <button>Add New Car</button>
+        </a>
+    </div>
+
+    <div class="car-grid">
+
+        {% for car in cars %}
+        <div class="car-card">
+
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1000"
+            alt="Car">
+
+            <div class="car-info">
+
+                <h2>{{ car[1] }}</h2>
+
+                <p><b>Model:</b> {{ car[2] }}</p>
+
+                <p><b>Rent:</b> ₹{{ car[3] }}/day</p>
+
+                <p><b>Owner:</b> {{ car[4] }}</p>
+
+                <p><b>Phone:</b> {{ car[5] }}</p>
+
+                <a href="/delete/{{ car[0] }}"
+                class="delete-btn">
+                    Delete
+                </a>
+
+            </div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+
+</div>
+
+</body>
+</html>

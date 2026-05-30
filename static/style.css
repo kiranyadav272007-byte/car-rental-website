@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* NAVBAR */
+nav{
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+ul{
+    display:flex;
+    list-style:none;
+}
+
+ul li{
+    margin-left:30px;
+}
+
+ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-text{
+    color:white;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+/* BUTTON */
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* FEATURES */
+.features{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.features h1{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.feature-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+/* FORM */
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:85vh;
+}
+
+.form-box{
+    width:420px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.form-box h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-box input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+/* DASHBOARD */
+.dashboard-container{
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+}
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.car-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.car-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+.car-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.car-info{
+    padding:20px;
+}
+
+.car-info p{
+    margin-bottom:10px;
+}
+
+.delete-btn{
+    display:inline-block;
+    background:red;
+    color:white;
+    padding:10px 15px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}

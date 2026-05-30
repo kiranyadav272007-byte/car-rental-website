@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Car</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🚗 CarRental</div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="form-container">
+
+    <div class="form-box">
+
+        <h1>Add Car For Rent</h1>
+
+        <form method="POST">
+
+            <input type="text"
+            name="car_name"
+            placeholder="Car Name"
+            required>
+
+            <input type="text"
+            name="model"
+            placeholder="Car Model"
+            required>
+
+            <input type="number"
+            name="rent"
+            placeholder="Rent Per Day"
+            required>
+
+            <input type="text"
+            name="owner_name"
+            placeholder="Owner Name"
+            required>
+
+            <input type="text"
+            name="phone"
+            placeholder="Phone Number"
+            required>
+
+            <button type="submit">
+                Add Car
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
